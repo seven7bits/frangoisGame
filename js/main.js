@@ -27,74 +27,73 @@
 
 //Game resources
 var g_ressources = [
-	{name: "font",				type: "image",src: "images/font.png"},
-	{name: "levelcomplete",		type: "image",src: "images/levelcomplete.png"},
-	{name: "levelcompletebg",	type: "image",src: "images/levelcompletebg.png"},
-	{name: "creditos",			type: "image",src: "images/creditos.png"},
-	{name: "menu",				type: "image",src: "images/menu.png"},
-    {name: "titlescreen",		type: "image",src: "images/titlescreen.png"},
-	{name: "menu_arrow",		type: "image",src: "images/bolinha_menu.png"},
+	{name: "font",				type: "image",src: "js/games/fangois/images/font.png"},
+	{name: "levelcomplete",		type: "image",src: "js/games/fangois/images/levelcomplete.png"},
+	{name: "levelcompletebg",	type: "image",src: "js/games/fangois/images/levelcompletebg.png"},
+	{name: "creditos",			type: "image",src: "js/games/fangois/images/creditos.png"},
+	{name: "menu",				type: "image",src: "js/games/fangois/images/menu.png"},
+    {name: "titlescreen",		type: "image",src: "js/games/fangois/images/titlescreen.png"},
+	{name: "menu_arrow",		type: "image",src: "js/games/fangois/images/bolinha_menu.png"},
 	//Parallel BGs
-	{name: "pl01",				type: "image",src: "images/background/frente.png"},
-	{name: "pl02",				type: "image",src: "images/background/chao.png"},
-	{name: "pl03",				type: "image",src: "images/background/torre.png"},
-	{name: "pl04",				type: "image",src: "images/background/montanha.png"},
-	{name: "pl05",     			type: "image",src: "images/background/ceu.png"},
-	{name: "spinning_coin_gold",type: "image",src: "images/coin.png"},
+	{name: "pl01",				type: "image",src: "js/games/fangois/images/background/frente.png"},
+	{name: "pl02",				type: "image",src: "js/games/fangois/images/background/chao.png"},
+	{name: "pl03",				type: "image",src: "js/games/fangois/images/background/torre.png"},
+	{name: "pl04",				type: "image",src: "js/games/fangois/images/background/montanha.png"},
+	{name: "pl05",     			type: "image",src: "js/games/fangois/images/background/ceu.png"},
+	{name: "spinning_coin_gold",type: "image",src: "js/games/fangois/images/coin.png"},
 
 	// our level tileset
-    {name: "tileset-platformer",type:"image",src: "images/tileset-platformer.png"},
+    {name: "tileset-platformer",type:"image",src: "js/games/fangois/images/tileset-platformer.png"},
 	//foreground
-	{name: "frente",  			type:"image",src: "images/background/frente.png"},
+	{name: "frente",  			type:"image",src: "js/games/fangois/images/background/frente.png"},
     // our levels
-    {name: "fase1",             type: "tmx",src: "maps/fase1.tmx"},
+    {name: "fase1",             type: "tmx",src: "js/games/fangois/maps/fase1.tmx"},
 	//chars
-	{name: "velho3",     		type: "image",  src: "images/velho3.png"},
-	{name: "monstro1",			type: "image",  src: "images/monstro2.png"},
+	{name: "velho3",     		type: "image",  src: "js/games/fangois/images/velho3.png"},
+	{name: "monstro1",			type: "image",  src: "js/games/fangois/images/monstro2.png"},
 
-	//sounds
-	{name: "limbo",     type: "audio",  src: "sounds/", channel:1},
-	{name: "physic",    type: "audio",  src: "sounds/", channel:1},
-	{name: "transition",type: "audio",  src: "sounds/", channel:1},
-	{name: "wee",     	type: "audio",  src: "sounds/", channel:2},
-	{name: "cling",     type: "audio",  src: "sounds/", channel:2},
-	{name: "stomp",     type: "audio",  src: "sounds/", channel:2},
-	{name: "jump",     	type: "audio",  src: "sounds/", channel:2},
+	//js/games/fangois/sounds
+	{name: "limbo",     type: "audio",  src: "js/games/fangois/sounds/", channel:1},
+	{name: "physic",    type: "audio",  src: "js/games/fangois/sounds/", channel:1},
+	{name: "transition",type: "audio",  src: "js/games/fangois/sounds/", channel:1},
+	{name: "wee",     	type: "audio",  src: "js/games/fangois/sounds/", channel:2},
+	{name: "cling",     type: "audio",  src: "js/games/fangois/sounds/", channel:2},
+	{name: "stomp",     type: "audio",  src: "js/games/fangois/sounds/", channel:2},
+	{name: "jump",     	type: "audio",  src: "js/games/fangois/sounds/", channel:2},
 
 	//hud
-	{name: "barra",  	 type: "image",   src: "images/barra.png"},
-	{name: "barra-a-0",  type: "image",   src: "images/barra-a-0.png"},
-	{name: "barra-a-1",  type: "image",   src: "images/barra-a-1.png"},
-	{name: "barra-a-2",  type: "image",   src: "images/barra-a-2.png"},
-	{name: "barra-a-3",  type: "image",   src: "images/barra-a-3.png"},
-	{name: "barra-a-4",  type: "image",   src: "images/barra-a-4.png"},
-	{name: "barra-a-5",  type: "image",   src: "images/barra-a-5.png"},
-	{name: "barra-a-6",  type: "image",   src: "images/barra-a-6.png"},
-	{name: "barra-a-7",  type: "image",   src: "images/barra-a-7.png"},
-	{name: "barra-a-8",  type: "image",   src: "images/barra-a-8.png"},
-	{name: "barra-b-0",  type: "image",   src: "images/barra-b-0.png"},
-	{name: "barra-b-1",  type: "image",   src: "images/barra-b-1.png"},
-	{name: "barra-b-2",  type: "image",   src: "images/barra-b-2.png"},
-	{name: "barra-b-3",  type: "image",   src: "images/barra-b-3.png"},
-	{name: "barra-b-4",  type: "image",   src: "images/barra-b-4.png"},
-	{name: "barra-b-5",  type: "image",   src: "images/barra-b-5.png"},
-	{name: "barra-b-6",  type: "image",   src: "images/barra-b-6.png"},
-	{name: "barra-b-7",  type: "image",   src: "images/barra-b-7.png"},
-	{name: "barra-b-8",  type: "image",   src: "images/barra-b-8.png"},
+	{name: "barra",  	 type: "image",   src: "js/games/fangois/images/barra.png"},
+	{name: "barra-a-0",  type: "image",   src: "js/games/fangois/images/barra-a-0.png"},
+	{name: "barra-a-1",  type: "image",   src: "js/games/fangois/images/barra-a-1.png"},
+	{name: "barra-a-2",  type: "image",   src: "js/games/fangois/images/barra-a-2.png"},
+	{name: "barra-a-3",  type: "image",   src: "js/games/fangois/images/barra-a-3.png"},
+	{name: "barra-a-4",  type: "image",   src: "js/games/fangois/images/barra-a-4.png"},
+	{name: "barra-a-5",  type: "image",   src: "js/games/fangois/images/barra-a-5.png"},
+	{name: "barra-a-6",  type: "image",   src: "js/games/fangois/images/barra-a-6.png"},
+	{name: "barra-a-7",  type: "image",   src: "js/games/fangois/images/barra-a-7.png"},
+	{name: "barra-a-8",  type: "image",   src: "js/games/fangois/images/barra-a-8.png"},
+	{name: "barra-b-0",  type: "image",   src: "js/games/fangois/images/barra-b-0.png"},
+	{name: "barra-b-1",  type: "image",   src: "js/games/fangois/images/barra-b-1.png"},
+	{name: "barra-b-2",  type: "image",   src: "js/games/fangois/images/barra-b-2.png"},
+	{name: "barra-b-3",  type: "image",   src: "js/games/fangois/images/barra-b-3.png"},
+	{name: "barra-b-4",  type: "image",   src: "js/games/fangois/images/barra-b-4.png"},
+	{name: "barra-b-5",  type: "image",   src: "js/games/fangois/images/barra-b-5.png"},
+	{name: "barra-b-6",  type: "image",   src: "js/games/fangois/images/barra-b-6.png"},
+	{name: "barra-b-7",  type: "image",   src: "js/games/fangois/images/barra-b-7.png"},
+	{name: "barra-b-8",  type: "image",   src: "js/games/fangois/images/barra-b-8.png"},
 
 ];
 
 
 var jsApp	=
 {
-	onload: function()
+	onload: function(target)
 	{
-
 		//DEBUG mode
 		//me.debug.renderHitBox = true;
 
 		// init the video
-		if (!me.video.init('jsapp', 640, 480, false, 1.0))
+		if (!me.video.init(target, 640, 480, false, 1.0))
 		{
 			alert("Sorry but your browser does not support html 5 canvas. Please try with another one!");
 			return;
@@ -441,10 +440,4 @@ var HUDSpiritObject = me.HUD_Item.extend({
 		this.spiritIcon = me.loader.getImage("barra-a-"+this.value);
         c.drawImage(this.spiritIcon, a, this.pos.y);
     }
-});
-
-
-window.onReady(function()
-{
-	jsApp.onload();
 });

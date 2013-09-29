@@ -77,10 +77,10 @@ var SevenBits = SevenBits || {};
 
 	SevenBits.setKeyState = function(keyName, isPressed) {
 		if (isPressed) {
-			$(document).trigger(keyEvent("keydown", keys[keyName].keyCode));
+			$(document).trigger(keyEvent("keydown", keys[keyName].code));
 			keys[keyName].isPressed = true;
 		} else {
-			$(document).trigger(keyEvent("keyup", keys[keyName].keyCode));
+			$(document).trigger(keyEvent("keyup", keys[keyName].code));
 			keys[keyName].isPressed = false;
 		}
 	};

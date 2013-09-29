@@ -80,7 +80,7 @@ var SevenBits = SevenBits || {};
 			$(document).trigger(keyEvent("keydown", keys[keyName].keyCode));
 			keys[keyName].isPressed = true;
 		} else {
-			$(document).trigger(keyEvent("keyup", keyName));
+			$(document).trigger(keyEvent("keyup", keys[keyName].keyCode));
 			keys[keyName].isPressed = false;
 		}
 	};

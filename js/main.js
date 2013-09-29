@@ -132,13 +132,13 @@ var jsApp	=
 		me.state.transition("fade", "#FFFFFF", 15);
 
 		// enable the keyboard
-		me.input.bindKey(me.input.KEY.LEFT,"left");
-        me.input.bindKey(me.input.KEY.RIGHT,"right");
-        me.input.bindKey(me.input.KEY.UP,"up",true);
-        me.input.bindKey(me.input.KEY.DOWN,"down",true);
-        me.input.bindKey(me.input.KEY.ENTER,"enter", true);
-        me.input.bindKey(me.input.KEY.X,"x", true);
-		me.input.bindKey(me.input.KEY.C,"jump", true);
+		me.input.bindKey(me.input.KEY.LEFT, "left");
+        me.input.bindKey(me.input.KEY.RIGHT, "right");
+        me.input.bindKey(me.input.KEY.UP, "up", true);
+        me.input.bindKey(me.input.KEY.DOWN, "down", true);
+        me.input.bindKey(me.input.KEY.ENTER, "enter", true);
+        me.input.bindKey(me.input.KEY.X, "x", true);
+		me.input.bindKey(me.input.KEY.C, "jump", true);
 
 		//DEBUG key
 		me.input.bindKey(me.input.KEY.K,"k", true);

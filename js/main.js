@@ -87,13 +87,13 @@ var g_ressources = [
 
 var jsApp	=
 {
-	onload: function(target)
+	onload: function()
 	{
 		//DEBUG mode
 		//me.debug.renderHitBox = true;
 
 		// init the video
-		if (!me.video.init(target, 640, 480, false, 1.0))
+		if (!me.video.init('js-app', 640, 480, false, 1.0))
 		{
 			alert("Sorry but your browser does not support html 5 canvas. Please try with another one!");
 			return;
@@ -441,3 +441,5 @@ var HUDSpiritObject = me.HUD_Item.extend({
         c.drawImage(this.spiritIcon, a, this.pos.y);
     }
 });
+
+jsApp.onload();
